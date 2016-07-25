@@ -1,0 +1,2 @@
+# Templates
+Azure ARM Templates
