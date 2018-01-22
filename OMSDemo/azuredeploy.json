@@ -4,7 +4,7 @@
     "parameters": {
         "omsRecoveryVaultName": {
             "type": "string",
-			"defaultValue": "DwRecoveryVault",
+			"defaultValue": "MyRecoveryVault4dwnn",
             "metadata": {
                 "description": "Assign a name for the ASR Recovery Vault"
             }
@@ -37,7 +37,7 @@
         },
         "omsWorkspaceName": {
             "type": "string",
-			"defaultValue": "DwOmsWorkspace",
+			"defaultValue": "MyOmsWorkspace4dwnn",
             "metadata": {
                 "description": "Assign a name for the Log Analytic Workspace Name"
             }
@@ -57,7 +57,7 @@
         },
         "omsAutomationAccountName": {
             "type": "string",
-			"defaultValue": "DwAutomationAccount",
+			"defaultValue": "MyAutomationAccount4dwnn",
             "metadata": {
                 "description": "Assign a name for the Automation account"
             }
