@@ -8,46 +8,14 @@ The main template will deploy resources into two different resource groups, and 
 	
 	# Create 2 resource groups, for mgmt and workload
 	
-	$MgmtRg = New-AzureRmResourceGroup -Name mgmtRg -Location westeurope -Verbose
-	$WorkloadRg = New-AzureRmResourceGroup -Name workloadRg -Location westeurope -Verbose
-	
-	# Define parameters for template deployment
-	
-	$OMSWorkspaceName = 'myOmsWorkspace'
-	$OMSWorkspaceRegion = 'West Europe'
-	$OMSRecoveryVaultName = 'myRecoveryVault'
-	$OMSRecoveryVaultRegion = 'West Europe'
-	$OMSAutomationName = 'MyAutomationAccount'
-	$OMSAutomationRegion = 'West Europe'
-	$azureAdmin = 'yourUser@domain.com'
-	$Platform = 'Windows' # Note that Linux isn't fully supported yet
-	$userName = 'azureadmin'
-	$vmNameSuffix = 'workload'
-	$instanceCount = '4'
-	$DSCJobGuid = (New-Guid)
-	$DSCJobGuid2 = (New-Guid)
-	$DSCJobGuid3 = (New-Guid)
+	$MgmtRg = New-AzureRmResourceGroup -Name OMS-Mgmt-RG -Location westeurope -Verbose
+	$WorkloadRg = New-AzureRmResourceGroup -Name OMS-Workload-RG -Location westeurope -Verbose
 	
 	# Deploy template
 	
 	New-AzureRmResourceGroupDeployment -Name myDemo `
 	                                   -ResourceGroupName $MgmtRg.ResourceGroupName `
 	                                   -TemplateUri https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/azuredeploy.json `
-	                                   -vmResourceGroup $WorkloadRg.ResourceGroupName `
-	                                   -omsRecoveryVaultName $OMSRecoveryVaultName `
-	                                   -omsRecoveryVaultRegion $OMSRecoveryVaultRegion `
-	                                   -omsWorkspaceName $OMSWorkspaceName `
-	                                   -omsWorkspaceRegion $OMSWorkspaceRegion `
-	                                   -omsAutomationAccountName $OMSAutomationName `
-	                                   -omsAutomationRegion $OMSAutomationRegion `
-	                                   -vmNameSuffix $vmNameSuffix `
-	                                   -userName $userName `
-	                                   -platform $platform `
-	                                   -instanceCount $instanceCount `
-	                                   -azureAdmin $azureAdmin `
-	                                   -DSCJobGuid $DSCJobGuid `
-	                                   -DSCJobGuid2 $DSCJobGuid2 `
-	                                   -DSCJobGuid3 $DSCJobGuid3 `
 	                                   -verbose 
 
 
