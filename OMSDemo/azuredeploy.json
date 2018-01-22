@@ -177,13 +177,13 @@
     },
     "variables": {
         "nestedTemplates": {
-            "omsRecoveryServices": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/omsRecoveryServices.json",
-            "omsAutomation": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/omsAutomation.json",
-            "omsWorkspace": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/omsWorkspace.json",
-            "managedVMs": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/managedVms.json",
-            "asrRunbooks": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/asrRunbooks.json",
-            "dscConfigs": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/dscConfigs.json",
-            "mgmtDashboards": "C:/Training/AzureDemo/AzureDeploy/OMS/MSOMS/OMSDemo/nestedtemplates/mgmtDashboards.json"
+            "omsRecoveryServices": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/omsRecoveryServices.json",
+            "omsAutomation": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/omsAutomation.json",
+            "omsWorkspace": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/omsWorkspace.json",
+            "managedVMs": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/managedVms.json",
+            "asrRunbooks": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/asrRunbooks.json",
+            "dscConfigs": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/dscConfigs.json",
+            "mgmtDashboards": "https://raw.githubusercontent.com/danielwnn/Templates/master/OMSDemo/nestedtemplates/mgmtDashboards.json"
         }
     },
     "resources": [
